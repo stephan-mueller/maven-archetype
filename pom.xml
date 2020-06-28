@@ -7,4 +7,9 @@
     <packaging>pom</packaging>
     <version>0</version>
 
+    <properties>
+        <sonar.projectKey>stephan-mueller_maven-archetype</sonar.projectKey>
+        <sonar.organization>stephan-mueller</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    </properties>
 </project>
