@@ -1,0 +1,28 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<server description="${symbol_dollar}{project.name}">
+    <featureManager>
+        <feature>microProfile-3.3</feature>
+        <feature>beanValidation-2.0</feature>
+    </featureManager>
+
+    <variable name="default.http.port" defaultValue="9080"/>
+    <variable name="default.https.port" defaultValue="9443"/>
+    <variable name="app.context.root" defaultValue="${artifactId}"/>
+
+    <httpEndpoint host="*" httpPort="${symbol_dollar}{default.http.port}" httpsPort="${symbol_dollar}{default.https.port}" id="defaultHttpEndpoint"/>
+
+    <webApplication location="${artifactId}.war" contextRoot="/"/>
+
+    <cors domain="/"
+          allowCredentials="true"
+          allowedHeaders="ACCEPT, AUTHORIZATION, CONTENT_TYPE, ORIGIN"
+          allowedMethods="GET, POST, PUT, DELETE, OPTIONS, HEAD"
+          allowedOrigins="*"
+          maxAge="3600"/>
+
+    <logging traceFileName="stdout" traceSpecification="*=audit:de.openknowledge.*=debug"/>
+
+    <mpMetrics authentication="false"/>
+</server>
