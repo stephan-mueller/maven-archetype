@@ -11,6 +11,7 @@ This is a collection of Maven archetypes for Enterprise Java projects. Software 
 **Available archetypes:**
 * openliberty-archetype (Version 1.0)
 * quarkus-archetype (Version 1.0)
+* wildfly-archetype (Version 1.0)
 
 ## How to run
 
@@ -53,17 +54,17 @@ The openliberty-archetype contains a RESTful hello world application, which demo
 | archetype-version   | 1.0                         |
 
 
-Currently the archetype generates projects with Open Liberty version `20.0.0.7` by default. The version may be overridden by setting the property  `-Dopenliberty-version=<openliberty-version>` 
+Currently the archetype generates projects with Open Liberty `20.0.0.7` by default. The version may be overridden by setting the property `-Dopenliberty-version=<openliberty-version>` 
 
 To create a project based on the archetype:
 ```shell script
-$ mvn archetype:generate -B -DarchetypeCatalog=local                      \ 
-                            -DarchetypeGroupId=de.openknowledge.archetype \
-                            -DarchetypeArtifactId=quarkus-archetype       \ 
-                            -DgroupId=org.acme                            \ 
-                            -DartifactId=looney                           \
-                            -Dversion=1.0-SNAPSHOT                        \
-                            -Dpackage=org.acme.looney                     \
+$ mvn archetype:generate -B -DarchetypeCatalog=local 
+                            -DarchetypeGroupId=de.openknowledge.archetypes
+                            -DarchetypeArtifactId=openliberty-archetype 
+                            -DgroupId=org.acme 
+                            -DartifactId=looney
+                            -Dversion=1.0-SNAPSHOT
+                            -Dpackage=org.acme.looney
                             -Dopenliberty-version=20.0.0.7
 ```
 
@@ -84,18 +85,49 @@ The quarkus-archetype contains a RESTful hello world application, which demonstr
 | archetype-version   | 1.0                         |
 
 
-Currently the archetype generates projects with quarkus version `1.6.0.Final` by default. The version may be overridden by setting the property  `-Dquarkus-version=<quarkus-version>` 
+Currently the archetype generates projects with Quarkus `1.6.0.Final` by default. The version may be overridden by setting the property `-Dquarkus-version=<quarkus-version>` 
 
 To create a project based on the archetype:
 ```shell script
-$ mvn archetype:generate -B -DarchetypeCatalog=local                      \ 
-                            -DarchetypeGroupId=de.openknowledge.archetype \
-                            -DarchetypeArtifactId=quarkus-archetype       \ 
-                            -DgroupId=org.acme                            \ 
-                            -DartifactId=looney                           \
-                            -Dversion=1.0-SNAPSHOT                        \
-                            -Dpackage=org.acme.looney                     \
+$ mvn archetype:generate -B -DarchetypeCatalog=local 
+                            -DarchetypeGroupId=de.openknowledge.archetypes
+                            -DarchetypeArtifactId=quarkus-archetype 
+                            -DgroupId=org.acme 
+                            -DartifactId=looney
+                            -Dversion=1.0-SNAPSHOT
+                            -Dpackage=org.acme.looney
                             -Dquarkus-version=1.6.0.Final
+```
+
+Afterwards you can build the project and run the tests: 
+```shell script
+$ cd looney
+$ mvn clean verify
+```
+
+### wildfly-archetype
+
+The wildfly-archetype contains a RESTful hello world application, which demonstrates features of Wildfly and Eclipse Microprofile.
+
+|                     | wildfly-archetype           |
+|---------------------|-----------------------------|
+| archetypeGroupId    | de.openknowledge.archetypes |
+| archetypeArtifactId | wildfly-archetype           |
+| archetype-version   | 1.0                         |
+
+
+Currently the archetype generates projects with Wildfly `20.0.0.Final` by default. The version may be overridden by setting the property `-Dwildfly-version=<wildfly-version>` 
+
+To create a project based on the archetype:
+```shell script
+$ mvn archetype:generate -B -DarchetypeCatalog=local  
+                            -DarchetypeGroupId=de.openknowledge.archetypes
+                            -DarchetypeArtifactId=wildfly-archetype
+                            -DgroupId=org.acme 
+                            -DartifactId=looney
+                            -Dversion=1.0-SNAPSHOT
+                            -Dpackage=org.acme.looney
+                            -Dwildfly-version=20.0.0.Final
 ```
 
 Afterwards you can build the project and run the tests: 

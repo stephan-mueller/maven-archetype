@@ -16,5 +16,6 @@
     <modules>
         <module>openliberty-archetype</module>
         <module>quarkus-archetype</module>
+        <module>wildfly-archetype</module>
     </modules>
 </project>
