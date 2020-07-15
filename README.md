@@ -3,7 +3,6 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/stephan-mueller/maven-archetype)](https://github.com/stephan-mueller/maven-archetype/commits) 
 [![GitHub](https://img.shields.io/github/license/stephan-mueller/maven-archetype)](https://github.com/stephan-mueller/maven-archetype/blob/master/LICENSE)
 [![CircleCI](https://circleci.com/gh/stephan-mueller/maven-archetype.svg?style=shield)](https://app.circleci.com/pipelines/github/stephan-mueller/maven-archetype)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=stephan-mueller_maven-archetype&metric=alert_status)](https://sonarcloud.io/dashboard?id=stephan-mueller_maven-archetype)
 
 This is a collection of Maven archetypes for Enterprise Java projects. Software requirements to run the samples are `maven`, `openjdk-1.8` (or any other 1.8 JDK) and `docker` for the generated projects.
 

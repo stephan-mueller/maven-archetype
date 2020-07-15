@@ -5,13 +5,7 @@
     <groupId>de.openknowledge.archetypes</groupId>
     <artifactId>maven-archetypes</artifactId>
     <packaging>pom</packaging>
-    <version>0</version>
-
-    <properties>
-        <sonar.projectKey>stephan-mueller_maven-archetype</sonar.projectKey>
-        <sonar.organization>stephan-mueller</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    </properties>
+    <version>1.2.1</version>
 
     <modules>
         <module>openliberty-archetype</module>
