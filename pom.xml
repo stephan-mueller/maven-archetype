@@ -5,7 +5,7 @@
     <groupId>de.openknowledge.archetypes</groupId>
     <artifactId>maven-archetypes</artifactId>
     <packaging>pom</packaging>
-    <version>1.2.2</version>
+    <version>1.2.3</version>
 
     <modules>
         <module>openliberty-archetype</module>

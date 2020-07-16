@@ -10,7 +10,7 @@ This is a collection of Maven archetypes for Enterprise Java projects. Software 
 **Available archetypes:**
 * openliberty-archetype (Version 1.0)
 * quarkus-archetype (Version 1.1)
-* wildfly-archetype (Version 1.0)
+* wildfly-archetype (Version 1.1)
 
 ## How to run
 
@@ -112,10 +112,11 @@ The wildfly-archetype contains a RESTful hello world application, which demonstr
 |---------------------|-----------------------------|
 | archetypeGroupId    | de.openknowledge.archetypes |
 | archetypeArtifactId | wildfly-archetype           |
-| archetype-version   | 1.0                         |
+| archetype-version   | 1.1                         |
 
 
-Currently the archetype generates projects with Wildfly `20.0.0.Final` by default. The version may be overridden by setting the property `-Dwildfly-version=<wildfly-version>` 
+Currently the archetype generates projects with Wildfly `20.0.1.Final` by default. The version may be overridden by setting 
+the property `-Dwildfly-version=<wildfly-version>` 
 
 To create a project based on the archetype:
 ```shell script
@@ -126,7 +127,7 @@ $ mvn archetype:generate -B -DarchetypeCatalog=local
                             -DartifactId=looney
                             -Dversion=1.0-SNAPSHOT
                             -Dpackage=org.acme.looney
-                            -Dwildfly-version=20.0.0.Final
+                            -Dwildfly-version=20.0.1.Final
 ```
 
 Afterwards you can build the project and run the tests: 

@@ -5,7 +5,7 @@
     <groupId>de.openknowledge.archetypes</groupId>
     <artifactId>wildfly-archetype</artifactId>
     <packaging>maven-archetype</packaging>
-    <version>1.0</version>
+    <version>1.1</version>
 
     <properties>
         <archetype.test.skip>true</archetype.test.skip>
