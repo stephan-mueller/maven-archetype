@@ -53,6 +53,7 @@
             <directory></directory>
             <includes>
                 <include>Dockerfile</include>
+                <include>Dockerfile.server</include>
                 <include>README.md</include>
             </includes>
         </fileSet>
@@ -60,6 +61,7 @@
             <directory></directory>
             <includes>
                 <include>Dockerfile</include>
+                <include>Dockerfile.server</include>
                 <include>README.md</include>
             </includes>
         </fileSet>

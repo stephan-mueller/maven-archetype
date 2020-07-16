@@ -8,7 +8,7 @@ This is a collection of Maven archetypes for Enterprise Java projects. Software 
 
 
 **Available archetypes:**
-* openliberty-archetype (Version 1.0)
+* openliberty-archetype (Version 1.1)
 * quarkus-archetype (Version 1.1)
 * wildfly-archetype (Version 1.1)
 
@@ -50,7 +50,7 @@ The openliberty-archetype contains a RESTful hello world application, which demo
 |---------------------|-----------------------------|
 | archetypeGroupId    | de.openknowledge.archetypes |
 | archetypeArtifactId | openliberty-archetype       |
-| archetype-version   | 1.0                         |
+| archetype-version   | 1.1                         |
 
 
 Currently the archetype generates projects with Open Liberty `20.0.0.7` by default. The version may be overridden by setting the property `-Dopenliberty-version=<openliberty-version>` 

@@ -1,11 +1,13 @@
 # ${artifactId}
 
-This is a project based on the microservice framework [Open Liberty](https://openliberty.io). It contains a hello world application, which demonstrates features of Quarkus and Eclipse Microprofile
+This is a project based on the microservice framework [Open Liberty](https://openliberty.io). It contains a hello world application, which demonstrates features of Open Liberty and Eclipse Microprofile
 
-Software requirements to run the samples are `maven`, `openjdk-1.8` (or any other 1.8 JDK) and `docker`.
-When running the Maven lifecycle it will create the war package and use the `quarkus-maven-plugin` to create a runnable 
-jar (fat jar) which contains the application and the Quarkus application server. The fat jar will be copied into a
-Docker image using Spotify's `dockerfile-maven-plugin` during the package phase.
+Software requirements to run the samples are `maven`, `openjdk-1.8` (or any other 1.8 JDK) and `docker`. When running the Maven lifecycle it will create the war package and use the `quarkus-maven-plugin` to create a runnable jar (fat jar) which contains the application and the Quarkus application server. The fat jar will be copied into a Docker image using Spotify's `dockerfile-maven-plugin` during the package phase.
+
+**Notable Features:**
+* Dockerfiles for runnable JAR & Server
+* Integration of MP Health and MP OpenAPI
+* Testcontainer-Tests with Rest-Assured, Cucumber and Postman/newman
 
 ## How to run
 
