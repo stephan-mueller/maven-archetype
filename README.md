@@ -9,7 +9,7 @@ This is a collection of Maven archetypes for Enterprise Java projects. Software 
 
 **Available archetypes:**
 * openliberty-archetype (Version 1.0)
-* quarkus-archetype (Version 1.0)
+* quarkus-archetype (Version 1.1)
 * wildfly-archetype (Version 1.0)
 
 ## How to run
@@ -81,7 +81,7 @@ The quarkus-archetype contains a RESTful hello world application, which demonstr
 |---------------------|-----------------------------|
 | archetypeGroupId    | de.openknowledge.archetypes |
 | archetypeArtifactId | quarkus-archetype           |
-| archetype-version   | 1.0                         |
+| archetype-version   | 1.1                         |
 
 
 Currently the archetype generates projects with Quarkus `1.6.0.Final` by default. The version may be overridden by setting the property `-Dquarkus-version=<quarkus-version>` 
